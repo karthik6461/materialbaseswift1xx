@@ -389,8 +389,10 @@ class ServerViewController: UIViewController {
         print("width \(UIScreen.mainScreen().bounds.width) heigth \(UIScreen.mainScreen().bounds.height)")
         
         
+        let myview : UIView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: UIScreen.mainScreen().bounds.width, height:UIScreen.mainScreen().bounds.height * 2)))
         
-        view.layout.size(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height * 1.5)
+        
+        myview.layout.size(width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height * 2)
         
         
         
@@ -402,12 +404,12 @@ class ServerViewController: UIViewController {
         
         
         
-        view.layout(prepareLargeCardViewExample()).edges(left: 10, right: 10, top: 10, bottom: 270)
+        myview.layout(prepareLargeCardViewExample()).edges(left: 10, right: 10, top: 10, bottom: 270)
         
-        view.layout(cardView).edges(left: 10, right: 10, top: 400, bottom: 10)
+        myview.layout(cardView).edges(left: 10, right: 10, top: 400, bottom: 10)
         
         
-        
+        view.addSubview(myview)
         
         
         /* let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 2000))

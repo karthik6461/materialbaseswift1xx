@@ -704,9 +704,13 @@ extension ViewController: MaterialCollectionViewDataSource {
         
         
         
-        let serverVC = ServerViewController()
+        //let serverVC = ServerViewController()
         
+        //let serverVC = LayoutViewController()
         
+        //let serverVC = CollectionViewController()
+        
+        let serverVC = TutorialPageViewController()
         
         let window = UIApplication.sharedApplication().windows[0] as UIWindow
         
