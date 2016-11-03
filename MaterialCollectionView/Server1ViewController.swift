@@ -3,12 +3,8 @@ import UIKit
 
 import Material
 
-import Alamofire
 
-import SwiftyJSON
-
-
-class ViewController: UIViewController {
+class Server1ViewController: UIViewController {
     
     /// A list of all the data source items.
     
@@ -18,10 +14,23 @@ class ViewController: UIViewController {
     
     private var collectionView: MaterialCollectionView!
     
-   
+    override func viewDidLoad() {
+        
+        print("viewDidLoad ..servers")
+        
+        super.viewDidLoad()
+        
+        prepareView()
+        
+        prepareItems()
+        
+        prepareCollectionView()
+        
+    }
+    
     /// Prepares the items Array.
     
-     func prepareItems() {
+    private func prepareItems() {
         
         dataSourceItems = [
             
@@ -73,7 +82,7 @@ class ViewController: UIViewController {
     
     /// Prepares view.
     
-     func prepareView() {
+    private func prepareView() {
         
         view.backgroundColor = MaterialColor.grey.lighten3
         
@@ -81,7 +90,7 @@ class ViewController: UIViewController {
     
     /// Prepares the collectionView.
     
-     func prepareCollectionView() {
+    private func prepareCollectionView() {
         
         collectionView = MaterialCollectionView(frame: view.bounds)
         
@@ -103,7 +112,7 @@ class ViewController: UIViewController {
     
     /// Prepares the medium card example.
     
-     func prepareMediumCardViewExample() -> MaterialPulseView {
+    private func prepareMediumCardViewExample() -> MaterialPulseView {
         
         let cardView: MaterialPulseView = MaterialPulseView(frame: CGRectMake(16, 100, view.bounds.width - 32, 240))
         
@@ -138,7 +147,7 @@ class ViewController: UIViewController {
         
         let titleLabel: UILabel = UILabel()
         
-        titleLabel.text = "Citi Bank Branch 181"
+        titleLabel.text = "Server 1"
         
         titleLabel.textColor = MaterialColor.blueGrey.darken4
         
@@ -161,9 +170,6 @@ class ViewController: UIViewController {
         moreButton.setImage(image, forState: .Normal)
         
         moreButton.setImage(image, forState: .Highlighted)
-        
-        moreButton.addTarget(self, action: "queueselected:", forControlEvents: UIControlEvents.TouchUpInside)
-
         
         contentView.addSubview(moreButton)
         
@@ -293,19 +299,19 @@ class ViewController: UIViewController {
         
         contentView.grid.contentInsetPreset = .Square3
         
-     /*   contentView.grid.views = [
-            
-            titleLabel,
-            
-            moreButton,
-            
-            detailLabel,
-            
-            alarmLabel,
-            
-            photoButton
-            
-        ]*/
+        /*   contentView.grid.views = [
+         
+         titleLabel,
+         
+         moreButton,
+         
+         detailLabel,
+         
+         alarmLabel,
+         
+         photoButton
+         
+         ]*/
         
         
         contentView.grid.views = [
@@ -333,7 +339,7 @@ class ViewController: UIViewController {
 
 /// CollectionViewDataSource methods.
 
-extension ViewController: MaterialCollectionViewDataSource {
+extension Server1ViewController: MaterialCollectionViewDataSource {
     
     func items() -> Array<MaterialDataSourceItem> {
         
@@ -371,7 +377,7 @@ extension ViewController: MaterialCollectionViewDataSource {
         
         if let _: Dictionary<String, AnyObject> =  item.data as? Dictionary<String, AnyObject> {
             
-           // cell.contentView.addSubview(prepareLargeCardViewExample())
+            // cell.contentView.addSubview(prepareLargeCardViewExample())
             
             cell.contentView.addSubview(prepareMediumCardViewExample())
             
@@ -625,7 +631,7 @@ extension ViewController: MaterialCollectionViewDataSource {
         
         moreButton.tag = 5
         
-        moreButton.addTarget(self, action: "queueselected:", forControlEvents: UIControlEvents.TouchUpInside)
+        moreButton.addTarget(self, action: "serverselected:", forControlEvents: UIControlEvents.TouchUpInside)
         
         
         
@@ -710,9 +716,9 @@ extension ViewController: MaterialCollectionViewDataSource {
     
     
     
-    func queueselected(sender:UIButton!) {
+    func serverselected(sender:UIButton!) {
         
-        print("Button Clicked \(sender.tag)")
+        print("Server button Clicked \(sender.tag)")
         
         
         
@@ -724,10 +730,7 @@ extension ViewController: MaterialCollectionViewDataSource {
         
         //let serverVC = CollectionViewController()
         
-        //let serverVC = TutorialPageViewController()
-        
-        
-        let serverVC = Server1ViewController()
+        let serverVC = TutorialPageViewController()
         
         let window = UIApplication.sharedApplication().windows[0] as UIWindow
         
@@ -752,53 +755,8 @@ extension ViewController: MaterialCollectionViewDataSource {
         
         
     }
-
     
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        prepareView()
-        
-        prepareItems()
-        
-        prepareCollectionView()
-        
-        
-        let todosEndpoint: String = "https://idfyappqueuev1.mybluemix.net/mobilelistqueues"
-        
-        let newTodo = ["title": "Frist Psot", "completed": 0, "userId": 1]
-        
-        Alamofire.request(.POST, todosEndpoint, parameters: newTodo, encoding: .JSON)
-            
-            .responseJSON { response in
-                
-                guard response.result.error == nil else {
-                    
-                    // got an error in getting the data, need to handle it
-                    
-                    print("error calling POST on /todos/1")
-                    
-                    print(response.result.error!)
-                    
-                    return
-                    
-                }
-                
-                
-                
-                if let value = response.result.value {
-                    
-                    let todo = JSON(value)
-                    
-                    print("The todo is: " + todo.description)
-                    
-                }
-                
-        }
-        
     
-    }
     
     
     
