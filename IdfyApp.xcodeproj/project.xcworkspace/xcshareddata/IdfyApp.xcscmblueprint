@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2D65080B318557A4797ABF09C1066172DB426096",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92CC0B44588F1DD5C6E64525A286E7AA95DAC381" : 0,
+    "2D65080B318557A4797ABF09C1066172DB426096" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D61608BD-3DFA-424B-9F9C-AAE36DCA8678",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92CC0B44588F1DD5C6E64525A286E7AA95DAC381" : "..",
+    "2D65080B318557A4797ABF09C1066172DB426096" : "idfyapp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IdfyApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IdfyApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/karthik6461\/materialbaseswift1xx",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2D65080B318557A4797ABF09C1066172DB426096"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/karthik6461\/idfyapp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92CC0B44588F1DD5C6E64525A286E7AA95DAC381"
+    }
+  ]
+}

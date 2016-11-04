@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "969792401CAB6AF5002F2880"
-               BuildableName = "MaterialCollectionView.app"
-               BlueprintName = "MaterialCollectionView"
-               ReferencedContainer = "container:MaterialCollectionView.xcodeproj">
+               BuildableName = "IdfyApp.app"
+               BlueprintName = "IdfyApp"
+               ReferencedContainer = "container:IdfyApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "969792401CAB6AF5002F2880"
-            BuildableName = "MaterialCollectionView.app"
-            BlueprintName = "MaterialCollectionView"
-            ReferencedContainer = "container:MaterialCollectionView.xcodeproj">
+            BuildableName = "IdfyApp.app"
+            BlueprintName = "IdfyApp"
+            ReferencedContainer = "container:IdfyApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "969792401CAB6AF5002F2880"
-            BuildableName = "MaterialCollectionView.app"
-            BlueprintName = "MaterialCollectionView"
-            ReferencedContainer = "container:MaterialCollectionView.xcodeproj">
+            BuildableName = "IdfyApp.app"
+            BlueprintName = "IdfyApp"
+            ReferencedContainer = "container:IdfyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "969792401CAB6AF5002F2880"
-            BuildableName = "MaterialCollectionView.app"
-            BlueprintName = "MaterialCollectionView"
-            ReferencedContainer = "container:MaterialCollectionView.xcodeproj">
+            BuildableName = "IdfyApp.app"
+            BlueprintName = "IdfyApp"
+            ReferencedContainer = "container:IdfyApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

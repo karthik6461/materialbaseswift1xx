@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253D0AEC1DCC3E11001929DE /* FacebookSDKs-iOS-4.17.0 in Resources */ = {isa = PBXBuildFile; fileRef = 253D0AEB1DCC3E11001929DE /* FacebookSDKs-iOS-4.17.0 */; };
+		253D0AFE1DCC3E16001929DE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0AFD1DCC3E16001929DE /* Bolts.framework */; };
+		253D0AFF1DCC3E17001929DE /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0AFD1DCC3E16001929DE /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		253D0B021DCC3E2F001929DE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0B001DCC3E2F001929DE /* FBSDKCoreKit.framework */; };
+		253D0B031DCC3E2F001929DE /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0B001DCC3E2F001929DE /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		253D0B041DCC3E2F001929DE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0B011DCC3E2F001929DE /* FBSDKLoginKit.framework */; };
+		253D0B051DCC3E2F001929DE /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 253D0B011DCC3E2F001929DE /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		253F9C971DC480B200E0AB3E /* Server1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F9C961DC480B200E0AB3E /* Server1ViewController.swift */; };
+		258B8F8E1DCC41C500362461 /* FBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B8F8D1DCC41C500362461 /* FBViewController.swift */; };
 		25CFDD701DADD89100750F29 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CFDD691DADD86E00750F29 /* Material.framework */; };
 		25CFDD711DADD89100750F29 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25CFDD691DADD86E00750F29 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25CFDD751DADDAEC00750F29 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFDD741DADDAEC00750F29 /* ServerViewController.swift */; };
@@ -180,9 +188,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				253D0B031DCC3E2F001929DE /* FBSDKCoreKit.framework in Embed Frameworks */,
 				25CFDD711DADD89100750F29 /* Material.framework in Embed Frameworks */,
+				253D0B051DCC3E2F001929DE /* FBSDKLoginKit.framework in Embed Frameworks */,
 				25FDAAD31DCADD0F00A6B2B1 /* Alamofire.framework in Embed Frameworks */,
 				25FDAAEF1DCADDAC00A6B2B1 /* SwiftyJSON.framework in Embed Frameworks */,
+				253D0AFF1DCC3E17001929DE /* Bolts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,12 +201,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		253D0AEB1DCC3E11001929DE /* FacebookSDKs-iOS-4.17.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-4.17.0"; sourceTree = "<group>"; };
+		253D0AFD1DCC3E16001929DE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		253D0B001DCC3E2F001929DE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		253D0B011DCC3E2F001929DE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		253D0B061DCC3F50001929DE /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		253F9C961DC480B200E0AB3E /* Server1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server1ViewController.swift; sourceTree = "<group>"; };
+		258B8F8D1DCC41C500362461 /* FBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBViewController.swift; sourceTree = "<group>"; };
 		25CFDD611DADD86D00750F29 /* Material.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Material.xcodeproj; path = "MaterialCollectionView/Material-1.x.x/Material.xcodeproj"; sourceTree = "<group>"; };
 		25CFDD741DADDAEC00750F29 /* ServerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
 		25FDAAB61DCADCF500A6B2B1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-3.5.0/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		25FDAAD61DCADDA300A6B2B1 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-swift2/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
-		969792411CAB6AF5002F2880 /* MaterialCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		969792411CAB6AF5002F2880 /* IdfyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdfyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969792441CAB6AF5002F2880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		969792461CAB6AF5002F2880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9697924B1CAB6AF5002F2880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,9 +227,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253D0B021DCC3E2F001929DE /* FBSDKCoreKit.framework in Frameworks */,
 				25CFDD701DADD89100750F29 /* Material.framework in Frameworks */,
-				25FDAAD21DCADD0F00A6B2B1 /* Alamofire.framework in Frameworks */,
+				253D0B041DCC3E2F001929DE /* FBSDKLoginKit.framework in Frameworks */,
 				25FDAAEE1DCADDAC00A6B2B1 /* SwiftyJSON.framework in Frameworks */,
+				25FDAAD21DCADD0F00A6B2B1 /* Alamofire.framework in Frameworks */,
+				253D0AFE1DCC3E16001929DE /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +281,10 @@
 		969792381CAB6AF5002F2880 = {
 			isa = PBXGroup;
 			children = (
+				253D0B001DCC3E2F001929DE /* FBSDKCoreKit.framework */,
+				253D0B011DCC3E2F001929DE /* FBSDKLoginKit.framework */,
+				253D0AFD1DCC3E16001929DE /* Bolts.framework */,
+				253D0AEB1DCC3E11001929DE /* FacebookSDKs-iOS-4.17.0 */,
 				25CFDD611DADD86D00750F29 /* Material.xcodeproj */,
 				969792431CAB6AF5002F2880 /* MaterialCollectionView */,
 				969792421CAB6AF5002F2880 /* Products */,
@@ -272,7 +296,7 @@
 		969792421CAB6AF5002F2880 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				969792411CAB6AF5002F2880 /* MaterialCollectionView.app */,
+				969792411CAB6AF5002F2880 /* IdfyApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,11 +305,13 @@
 			isa = PBXGroup;
 			children = (
 				969792441CAB6AF5002F2880 /* AppDelegate.swift */,
+				253D0B061DCC3F50001929DE /* BridgingHeader.h */,
 				969792461CAB6AF5002F2880 /* ViewController.swift */,
 				25CFDD741DADDAEC00750F29 /* ServerViewController.swift */,
 				A7C922861DB036A300AE376B /* LayoutViewController.swift */,
 				A7C9228D1DB055C600AE376B /* TutorialPageViewController.swift */,
 				253F9C961DC480B200E0AB3E /* Server1ViewController.swift */,
+				258B8F8D1DCC41C500362461 /* FBViewController.swift */,
 				9697924B1CAB6AF5002F2880 /* Assets.xcassets */,
 				9697924D1CAB6AF5002F2880 /* LaunchScreen.storyboard */,
 				969792501CAB6AF5002F2880 /* Info.plist */,
@@ -296,9 +322,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		969792401CAB6AF5002F2880 /* MaterialCollectionView */ = {
+		969792401CAB6AF5002F2880 /* IdfyApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 969792531CAB6AF5002F2880 /* Build configuration list for PBXNativeTarget "MaterialCollectionView" */;
+			buildConfigurationList = 969792531CAB6AF5002F2880 /* Build configuration list for PBXNativeTarget "IdfyApp" */;
 			buildPhases = (
 				9697923D1CAB6AF5002F2880 /* Sources */,
 				9697923E1CAB6AF5002F2880 /* Frameworks */,
@@ -312,9 +338,9 @@
 				25FDAAD51DCADD0F00A6B2B1 /* PBXTargetDependency */,
 				25FDAAF11DCADDAC00A6B2B1 /* PBXTargetDependency */,
 			);
-			name = MaterialCollectionView;
+			name = IdfyApp;
 			productName = MaterialCollectionView;
-			productReference = 969792411CAB6AF5002F2880 /* MaterialCollectionView.app */;
+			productReference = 969792411CAB6AF5002F2880 /* IdfyApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +359,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9697923C1CAB6AF5002F2880 /* Build configuration list for PBXProject "MaterialCollectionView" */;
+			buildConfigurationList = 9697923C1CAB6AF5002F2880 /* Build configuration list for PBXProject "IdfyApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -360,7 +386,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				969792401CAB6AF5002F2880 /* MaterialCollectionView */,
+				969792401CAB6AF5002F2880 /* IdfyApp */,
 			);
 		};
 /* End PBXProject section */
@@ -501,6 +527,7 @@
 			files = (
 				9697924F1CAB6AF5002F2880 /* LaunchScreen.storyboard in Resources */,
 				9697924C1CAB6AF5002F2880 /* Assets.xcassets in Resources */,
+				253D0AEC1DCC3E11001929DE /* FacebookSDKs-iOS-4.17.0 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258B8F8E1DCC41C500362461 /* FBViewController.swift in Sources */,
 				25CFDD751DADDAEC00750F29 /* ServerViewController.swift in Sources */,
 				A7C9228E1DB055C600AE376B /* TutorialPageViewController.swift in Sources */,
 				969792471CAB6AF5002F2880 /* ViewController.swift in Sources */,
@@ -644,11 +672,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaterialCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idfyapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IdfyApp;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = MaterialCollectionView/BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -659,18 +692,23 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MaterialCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idfyapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IdfyApp;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = MaterialCollectionView/BridgingHeader.h;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9697923C1CAB6AF5002F2880 /* Build configuration list for PBXProject "MaterialCollectionView" */ = {
+		9697923C1CAB6AF5002F2880 /* Build configuration list for PBXProject "IdfyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				969792511CAB6AF5002F2880 /* Debug */,
@@ -679,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		969792531CAB6AF5002F2880 /* Build configuration list for PBXNativeTarget "MaterialCollectionView" */ = {
+		969792531CAB6AF5002F2880 /* Build configuration list for PBXNativeTarget "IdfyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				969792541CAB6AF5002F2880 /* Debug */,

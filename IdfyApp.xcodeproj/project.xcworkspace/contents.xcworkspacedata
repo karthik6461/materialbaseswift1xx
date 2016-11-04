@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MaterialCollectionView.xcodeproj">
+      location = "self:/Users/karthik/Desktop/Code/nyc/idfyapp/IdfyApp.xcodeproj">
    </FileRef>
 </Workspace>
