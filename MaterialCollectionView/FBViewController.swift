@@ -1,5 +1,6 @@
 
 import UIKit
+import Nuke
 
 class FBViewController: UIViewController,FBSDKLoginButtonDelegate {
     
@@ -69,8 +70,22 @@ class FBViewController: UIViewController,FBSDKLoginButtonDelegate {
                 print("fetched user: \(result)")
                 let userName : NSString = result.valueForKey("name") as! NSString
                 print("User Name is: \(userName)")
-                //let userEmail : NSString = result.valueForKey("email") as! NSString
-                //print("User Email is: \(userEmail)")
+                let userEmail : NSString = result.valueForKey("email") as! NSString
+                print("User Email is: \(userEmail)")
+                
+                /*
+ 
+                 Nuke.taskWith(NSURL(string: "https://bit.ly/moa_image")!) {
+                 
+                 image = $0.image!
+                 
+                 imageCardView.image = image
+                 
+                 
+                 
+                 }.resume()
+ 
+ */
             }
         })
     }
